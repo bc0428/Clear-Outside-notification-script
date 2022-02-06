@@ -62,9 +62,5 @@ def notify(title, text):
 def push_notifications(total_clear_hours, consecutive_hours, consecutive_hours_start, condition, clear_hours_threshold):
     if total_clear_hours >= clear_hours_threshold:
         notify("Clear skies tonight!", f"{condition} condition hours: {total_clear_hours}\nMaximum {consecutive_hours} consecutive hours from {consecutive_hours_start}:00")
-
-
-# make command file
-# 1. #!/usr/bin/env python3 at first line of .py file
-# 2. change extension of file to .command
-# 3. chmod +x filename.command in terminal
+        
+        
